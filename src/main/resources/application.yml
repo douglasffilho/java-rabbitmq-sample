@@ -1,0 +1,15 @@
+spring:
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: order-status
+    password: rabbitmq-password
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3307/services?serverTimezone=UTC&createDatabaseIfNotExist=true
+    username: dbuser
+    password: dbpassword
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    hibernate:
+      ddl-auto: update
